@@ -9,9 +9,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
-public class H2ProductRepository implements ProductRepository {
+@Deprecated
+public class H2ProductRepository {
 
+    /*
     private final JdbcClient jdbcClient;
 
     public H2ProductRepository(JdbcClient jdbcClient) {
@@ -62,4 +63,5 @@ public class H2ProductRepository implements ProductRepository {
                 .param("id", id)
                 .update() != 0;
     }
+     */
 }
